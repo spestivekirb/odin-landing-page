@@ -1,3 +1,7 @@
+/* General code to remove default styles of HTML elements
+    Helps CSS styling to be more controlable.
+ */
+
 body {
     margin: 0;
     padding: 0;
@@ -17,7 +21,7 @@ ul {
 
 }
 
-/* Header content */
+/* Header content: */
 
 .header,
 .content-1 {
@@ -45,13 +49,19 @@ ul {
     gap: 24px;
 }
 
-/* Content section 1 */
+/* Content section 1 
+    Viewed as two flex containers.
+    Container 1 left-right (Text + Button, Image)
+    Container 2 top-down: (Header, Description, Button)
+    Image set to fit container 2 regardless of size.
+*/
 
 .content-1 {
     display: flex;
     flex-direction: row;
     padding: 120px;
     gap: 50px;
+    align-items: center;
 }
 
 .left-1 {
@@ -100,7 +110,12 @@ p {
     border-width: 0;
 }
 
-/* Content section 2 */
+/* Content section 2 
+    Each image-text combination is treated as a "card". 
+    "Cards" is a div wrapper for all 4 of the "card", allowing for flexbox control.
+    Image size controls card size, text will fit to it.
+    Image size standardized with max-width and flex: 1.
+*/
 .content-2 {
     display: flex;
     flex-direction: column;
@@ -153,7 +168,7 @@ p {
     height: auto;
     width: 100%;
     padding-top: 5px;
-    font-size: 14px;
+    font-size: 18px;
     color: gray;
 }
 
@@ -180,10 +195,13 @@ p {
     align-self: flex-end;
     color: #1F2937;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
 }
 
-/* Content section 4 */
+/* Content section 4 
+    Viewed as two flex containers. One left to right (text, button)
+    Second flex container is top-down (text)
+*/
 .call-card {
     background-color: #3882F6;
     color: #E5E7EB;
@@ -193,8 +211,8 @@ p {
     height: auto;
     display: flex;
     flex-direction: row;
-    border-radius: 8px;
-    font-size: 14px;
+    border-radius: 12px;
+    font-size: 18px;
     justify-content: space-between;
     align-items: center;
     gap: 20%;
