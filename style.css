@@ -147,7 +147,7 @@ p {
     height: auto;
     width: 100%;
     padding-top: 5px;
-    font-size: 18px;
+    font-size: 14px;
     color: gray;
 }
 
@@ -174,6 +174,37 @@ p {
     align-self: flex-end;
     color: #1F2937;
     font-weight: bold;
+    font-size: 18px;
+}
+
+/* Content section 4 */
+.call-card {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    padding: 50px 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+}
+
+.heading-4 {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.button-4 {
+    padding: 8px 32px;
+    border: 2px solid #E5E7EB;
+    border-radius: 12px;
+    background-color: #3882F6;
+    color: #E5E7EB;
     font-size: 18px;
 }
 
