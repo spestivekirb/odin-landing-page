@@ -17,7 +17,7 @@ ul {
 
 }
 
-
+/* Header content */
 
 .header,
 .content-1 {
@@ -45,6 +45,8 @@ ul {
     gap: 24px;
 }
 
+/* Content section 1 */
+
 .content-1 {
     display: flex;
     flex-direction: row;
@@ -67,6 +69,7 @@ ul {
 }
 
 h1,
+h2,
 p {
     margin: 0;
     padding: 0;
@@ -94,7 +97,65 @@ p {
     border-width: 0;
 }
 
+/* Content section 2 */
+.content-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.heading-2 {
+    font-size: 36px;
+    font-weight: 900px;
+    color: #1F2937;
+    padding-top: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8%;
+    object-fit: cover;
+    flex: 1;
+    padding: 50px 10%;
+}
+
+.card {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: solid #3882F6;
+    border-radius: 16px;
+    border-width: 3px;
+    object-fit: cover;
+    
+}
+
+.center-text {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding-top: 5px;
+    font-size: 18px;
+    color: gray;
+}
+
+
+
+/* Removing base CSS properties */
 .container {
     padding-left: 20%;
     padding-right: 20%;
 }
+
