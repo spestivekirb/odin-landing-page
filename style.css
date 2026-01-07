@@ -208,6 +208,19 @@ p {
     font-size: 18px;
 }
 
+/* Footer */
+.footer {
+    background-color: #1F2937;
+    padding: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright {
+    color: #E5E7EB;
+}
+
+
 
 /* Removing base CSS properties */
 .container {
